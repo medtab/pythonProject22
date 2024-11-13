@@ -2,4 +2,5 @@ spacy
 pandas
 numpy
 scikit-learn
-sentence_transformers
+sentence_transformers 
+fr-core-news-sm @ https://github.com/explosion/spacy-models/releases/download/fr_core_news_sm-3.8.0/fr_core_news_sm-3.8.0.tar.gz

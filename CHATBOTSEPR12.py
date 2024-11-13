@@ -89,7 +89,7 @@ def main():
     css_code = """
     <style>
     .stApp {
-        background-image: url("C:/Users/user/PycharmProjects/pythonProject22/LOGO2.png");
+        background-image: url("LOGO2.png");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -101,12 +101,12 @@ def main():
 
     col1, col2 = st.columns([1, 4])
     with col1:
-        logo_path = r"C:\Users\user\PycharmProjects\pythonProject22\LOGO SEPR.png"
+        logo_path = "LOGO SEPR.png"
         st.image(logo_path, use_column_width=True)
 
     with col2:
         st.title("Chatbot de la Société d'Environnement et de Plantation de Redeyef SEPR")
-        file_path = r"C:\Users\user\PycharmProjects\pythonProject22\CHATBOTSEPR12.csv"
+        file_path = "CHATBOTSEPR12.csv"
 
         # Chargement des données FAQ
         faq_data = load_faq_data(file_path)
@@ -122,7 +122,7 @@ def main():
                     response = chatbot_pipeline(user_question, faq_data, faq_embeddings)
 
                     # Affichage de l'image du chatbot avec gestion d'erreur
-                    chatbot_image_path = r"C:\Users\user\PycharmProjects\pythonProject22\IMGCH_1804.jpg"
+                    chatbot_image_path = "IMGCH_1804.jpg"
                     try:
                         st.image(chatbot_image_path, caption="Chatbot SEPR", width=80)
                     except Exception as e:
